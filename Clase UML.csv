@@ -1,0 +1,48 @@
+id,Nombre,Biblioteca de figuras,ID de página,Contenido por,Grupo,Origen de línea,Destino de la línea,Flecha de origen,Flecha de destino,Estado,Área de texto 1,Área de texto 2,Área de texto 3,Comentarios
+1,Documento,,,,,,,,,Borrador,Clase UML,,,
+2,Página,,,,,,,,,,Clase UML,,,
+3,Clase,UML,2,,,,,,,,ContenidoAudiovisual,"​- id: int - titulo: String 
+- duracionEnMinutos: int 
+- genero: String","​+ mostrarDetalles(): void 
++ toCSV(): String",
+4,Bloque,Estándar,2,,25,,,,,,Clase UML,,,
+5,Bloque,Estándar,2,,25,,,,,,"Veronica Salguero  |  November 30, 2024",,,
+6,Clase,UML,2,,,,,,,,Pelicula,"​- estudio: String 
+- listaActores: List<Actor>","​+ agregarActor(actor: Actor): void 
++ mostrarDetalles(): void 
++ toCSV(): String",
+7,Clase,UML,2,,,,,,,,SerieDeTV,​+ agregarTemporada(temporada: Temporada): void,"​+ agregarTemporada(temporada: Temporada): void 
++ mostrarDetalles(): void 
++ toCSV(): String",
+8,Clase,UML,2,,,,,,,,Documental,"​- tema: String 
+- listaInvestigadores: List<Investigador>","​+ agregarInvestigador(investigador: Investigador): void 
++ mostrarDetalles(): void 
++ toCSV(): String",
+9,Clase,UML,2,,,,,,,,Actor,"​- nombre: String 
+- edad: int",​+ getNombre(): String + getEdad(): int,
+10,Clase,UML,2,,,,,,,,Temporada,"​- numero: int 
+- episodios: int","​+ getNumero(): int 
++ getEpisodios(): int",
+11,Clase,UML,2,,,,,,,,Investigador,"​- nombre: String 
+- campo: String","​+ getNombre(): String 
++ getCampo(): String",
+12,Clase,UML,2,,,,,,,,Vista,"​+ mostrarMenu(): int 
++ mostrarMensaje(mensaje: String): void 
++ mostrarContenido(contenido: String): void",,
+13,Clase,UML,2,,,,,,,,ControladorContenido,"​- contenidos: List<ContenidoAudiovisual> 
+- vista: Vista","​+ iniciar(): void 
++ mostrarContenidos(): void 
++ cargarContenidos(): void 
++ guardarContenidos(): void",
+14,Clase,UML,2,,,,,,,,VistaConsola,​+ mostrarMenu(): int + mostrarMensaje(mensaje: String): void + mostrarContenido(contenido: String): void,,
+15,Línea,,2,,25,,4,None,None,,,,,
+16,Línea,,2,,,3,6,None,Generalization,,,,,
+17,Línea,,2,,,6,9,None,Composition,,,,,
+18,Línea,,2,,,3,7,None,Generalization,,,,,
+19,Línea,,2,,,3,8,None,Generalization,,,,,
+20,Línea,,2,,,7,10,None,Composition,,,,,
+21,Línea,,2,,,8,11,None,Composition,,,,,
+22,Línea,,2,,,13,12,None,Generalization,,,,,
+23,Línea,,2,,,14,12,None,Generalization,,,,,
+24,Línea,,2,,,3,13,None,None,,,,,
+25,Grupo 1,,2,,,,,,,,,,,
